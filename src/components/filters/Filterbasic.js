@@ -86,6 +86,7 @@ export default function Filterbasic() {
               p={"0"}
               pr={"4"}
               outline={"none"}
+              fontWeight={"bold"}
               _hover={{ border:"none" , outline:"red" }}
             />
           </Box>
@@ -95,8 +96,8 @@ export default function Filterbasic() {
             borderRadius={"0"}
             pr={"4"}
           >
-            <label htmlFor="">Property Type: </label>
-            <Select onChange={showDataonSelect} id="select" border={"none"} mt={"1"} >
+            <label htmlFor="" >Property Type: </label>
+            <Select onChange={showDataonSelect} id="select" border={"none"} mt={"1"} fontWeight={"bold"} >
               <option value="default">--Select--</option>
               <option value="gender" id="gender">
                 Houses
@@ -118,6 +119,7 @@ export default function Filterbasic() {
               id="selectPrice"
               border={"none"}
               mt={"1"}
+              fontWeight={"bold"}
             >
               <option value="default">--Select--</option>
               <option value="low" id="low">
@@ -138,7 +140,9 @@ export default function Filterbasic() {
             pr={"4"}
           >
             <Center h={"full"}>
-            <Button background={"#7065ee"} color={"white"}>
+            <Button background={"#7065ee"} color={"white"}
+        _hover={{color:"black", background:"#ebedf0"}}
+        >
               Search 
             </Button></Center>
           </Box>

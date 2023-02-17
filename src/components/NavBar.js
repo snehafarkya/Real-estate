@@ -72,14 +72,19 @@ const MenuLinks = ({ isOpen }) => {
         justify={["center", "space-between", "flex-end", "flex-"]}
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
+        color={"black"}
       >
-        <MenuItem to="/">Minha Conta</MenuItem>
-        <MenuItem to="/how"> Meus Pedidos </MenuItem>
-        <MenuItem to="/faetures"> Favoritos </MenuItem>
-        <MenuItem to="/pricing"> Recomendados </MenuItem>
+        <MenuItem to="/" >Rent</MenuItem>
+        <MenuItem to="/how"> Buy </MenuItem>
+        <MenuItem to="/faetures"> Sell </MenuItem>
+        <MenuItem to="/pricing"> Manage Property </MenuItem>
+        <MenuItem to="/pricing"> Resources </MenuItem>
+
         <MenuItem to="/signup" isLast>
           <ButtonGroup>
-        <Button color={"white"} background={"#7065ee"} variant='solid'>
+        <Button color={"white"} background={"#7065ee"} variant='solid'
+        _hover={{color:"black", background:"#ebedf0"}}
+        >
     Button
   </Button>
   <Button borderColor={"#7065ee"} color={"#7065ee"} variant='outline'>
