@@ -1,5 +1,13 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack, ButtonGroup } from "@chakra-ui/react";
+import {
+  Link,
+  Box,
+  Flex,
+  Text,
+  Button,
+  Stack,
+  ButtonGroup,
+} from "@chakra-ui/react";
 
 // import { ReactComponent as Logo } from "../logoo.png";
 
@@ -9,8 +17,8 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <NavBarContainer {...props} >
-      {/* <Logo /> */}
+    <NavBarContainer {...props}>
+      {/* <Logo />  */}
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -62,9 +70,9 @@ const MenuLinks = ({ isOpen }) => {
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
-      w={"full"} background={"white"}
+      w={"full"}
+      background={"white"}
       padding={"6"}
-      
     >
       <Stack
         spacing={8}
@@ -74,7 +82,19 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
         color={"black"}
       >
-        <MenuItem to="/" >Rent</MenuItem>
+        <Text
+          color={"black"}
+          justifyContent={"flex-start"}
+          align="left"
+          position={"absolute"}
+          top={"30px"}
+          left={"50px"}
+          fontWeight={"bold"}
+          fontSize={"1.2em"}
+        >
+          RealEstate
+        </Text>
+        <MenuItem to="/">Rent</MenuItem>
         <MenuItem to="/how"> Buy </MenuItem>
         <MenuItem to="/faetures"> Sell </MenuItem>
         <MenuItem to="/pricing"> Manage Property </MenuItem>
@@ -82,15 +102,18 @@ const MenuLinks = ({ isOpen }) => {
 
         <MenuItem to="/signup" isLast>
           <ButtonGroup>
-        <Button color={"white"} background={"#7065ee"} variant='solid'
-        _hover={{color:"black", background:"#ebedf0"}}
-        >
-    Button
-  </Button>
-  <Button borderColor={"#7065ee"} color={"#7065ee"} variant='outline'>
-    Button
-  </Button>
-  </ButtonGroup>
+            <Button
+              color={"white"}
+              background={"#7065ee"}
+              variant="solid"
+              _hover={{ color: "black", background: "#ebedf0" }}
+            >
+              Button
+            </Button>
+            <Button borderColor={"#7065ee"} color={"#7065ee"} variant="outline">
+              Button
+            </Button>
+          </ButtonGroup>
         </MenuItem>
       </Stack>
     </Box>
