@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
+import { Link, Box, Flex, Text, Button, Stack, ButtonGroup } from "@chakra-ui/react";
 
 // import { ReactComponent as Logo } from "../logoo.png";
 
@@ -78,17 +78,14 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/faetures"> Favoritos </MenuItem>
         <MenuItem to="/pricing"> Recomendados </MenuItem>
         <MenuItem to="/signup" isLast>
-          <Button
-            size="sm"
-            rounded="md"
-            color={["primary.500", "primary.500", "white", "white"]}
-            bg={["white", "white", "primary.500", "primary.500"]}
-            _hover={{
-              bg: ["primary.100", "primary.100", "primary.600", "primary.600"]
-            }}
-          >
-            Sair
-          </Button>
+          <ButtonGroup>
+        <Button color={"white"} background={"#7065ee"} variant='solid'>
+    Button
+  </Button>
+  <Button borderColor={"#7065ee"} color={"#7065ee"} variant='outline'>
+    Button
+  </Button>
+  </ButtonGroup>
         </MenuItem>
       </Stack>
     </Box>

@@ -49,7 +49,7 @@ export default function Filterbasic() {
     <div>
       <Grid templateColumns={"auto auto"} marginX={"28"} justifyContent={"space-around"}>
         <Heading as={"h2"}>Search Property to Rent </Heading>
-          <Input pr="4.5rem" placeholder="Search here" w={"sm"} />
+          <Input pr="4.5rem" placeholder="Search with Search Bar" background={"white"} w={"sm"} />
       </Grid>
       <Flex justify={"center"} display={"flex"} gap={"10"} flexWrap={"wrap"}>
         <Flex
@@ -138,7 +138,7 @@ export default function Filterbasic() {
             pr={"4"}
           >
             <Center h={"full"}>
-            <Button background={"#7065ee"}>
+            <Button background={"#7065ee"} color={"white"}>
               Search 
             </Button></Center>
           </Box>
