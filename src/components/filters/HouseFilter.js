@@ -1,6 +1,6 @@
 import React from 'react'
 import person from './person'
-import { Card,Grid, GridItem,CardBody,CardHeader, Image, Flex, CardFooter} from '@chakra-ui/react';
+import { Card,Grid,CardBody, Image, Flex, CardFooter} from '@chakra-ui/react';
 export default function HouseFilter() {
   const data = person.filter((info) => info.gender === "Houses").map((item) => {
     return (
@@ -10,11 +10,10 @@ export default function HouseFilter() {
         <Image src={item.image} w={"xs"} p={"0"} borderTopRadius={"inherit"}/>
 
           <CardBody color="GrayText" fontSize={"0.8em"}>
-            <p style={{color:"GrayText"}}><b style={{color:"#7065ee",fontSize:"1.6em"}}>$2,095</b>/month</p>
+            <p style={{color:"GrayText"}}><b style={{color:"#7065ee",fontSize:"1.6em"}}>${item.price}</b>/month</p>
             <p><b style={{color:"black",fontSize:"1.2em"}}>{item.name}</b></p>
             <p>{item.address}</p>
-            <p>{item.flat}</p>
-            <p>{item.gender}</p>
+        
             </CardBody>
 
             <CardFooter borderTop={"2px solid #f6f6f6"} mx={"6"} justifyContent={"space-evenly"}>

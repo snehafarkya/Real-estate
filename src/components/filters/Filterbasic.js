@@ -6,18 +6,12 @@ import {
   Button,
   Flex,
   Box,
-  Card,
-  CardHeader,
-  CardBody,
   Grid,
   Center,
   Heading,
-  InputRightElement,
   Input,
-  InputGroup,
   Select,
   Text,
-  Image,
 } from "@chakra-ui/react";
 import HouseFilter from "./HouseFilter";
 import FlatFilter from "./FlatFilter";
@@ -31,19 +25,19 @@ export default function Filterbasic() {
   const showDataonSelect = (e) => {
     // e.preventDefault();
 
-    if (e.target.value == "gender") {
+    if (e.target.value === "gender") {
       <HouseFilter />;
       setSelectdata(HouseFilter);
-    } else if (e.target.value == "flat") {
+    } else if (e.target.value === "flat") {
       <FlatFilter />;
       setSelectdata(FlatFilter);
-    } else if (e.target.value == "low") {
+    } else if (e.target.value === "low") {
       <LowHouseFilter />;
       setSelectdata(LowHouseFilter);
-    } else if (e.target.value == "high") {
+    } else if (e.target.value === "high") {
       <HighPriceFilter />;
       setSelectdata(HighPriceFilter);
-    } else if (e.target.value == "higher") {
+    } else if (e.target.value === "higher") {
       <HigherPriceFilter />;
       setSelectdata(HigherPriceFilter);
     } else if (e.target.value == null) {

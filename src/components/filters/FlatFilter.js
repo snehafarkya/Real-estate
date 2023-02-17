@@ -1,6 +1,6 @@
 import React from 'react'
 import person from './person'
-import { Card,Grid, GridItem,CardBody,CardHeader, Image, Flex, CardFooter} from '@chakra-ui/react';
+import { Card,Grid,CardBody, Image, Flex, CardFooter} from '@chakra-ui/react';
 export default function FlatFilter() {
   const data = person.filter((info) => info.gender === "Flats").map((item) => {
     return (
