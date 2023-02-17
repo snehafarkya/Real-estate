@@ -68,12 +68,13 @@ export default function Filterbasic() {
             borderRadius={"0"}
           >
             <label htmlFor="">Location:</label>
-            <Text pt={"1"}>New York</Text>
+            <Text pt={"2"} pr={"4"} fontWeight={"bold"}>New York</Text>
           </Box>
           <Box
             border={"none"}
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
+            pr={"4"}
           >
             <label htmlFor="">When To: </label>
             <Input
@@ -81,17 +82,21 @@ export default function Filterbasic() {
               size="sm"
               border={"none"}
               type="datetime-local"
+              mt={"1"}
               p={"0"}
               pr={"4"}
+              outline={"none"}
+              _hover={{ border:"none" , outline:"red" }}
             />
           </Box>
           <Box
             border={"none"}
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
+            pr={"4"}
           >
             <label htmlFor="">Property Type: </label>
-            <Select onChange={showDataonSelect} id="select" border={"none"}>
+            <Select onChange={showDataonSelect} id="select" border={"none"} mt={"1"} >
               <option value="default">--Select--</option>
               <option value="gender" id="gender">
                 Houses
@@ -105,12 +110,14 @@ export default function Filterbasic() {
             border={"none"}
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
+            pr={"4"}
           >
             <label htmlFor="">Price Sort: </label>
             <Select
               onChange={showDataonSelect}
               id="selectPrice"
               border={"none"}
+              mt={"1"}
             >
               <option value="default">--Select--</option>
               <option value="low" id="low">
@@ -128,6 +135,7 @@ export default function Filterbasic() {
             border={"none"}
             borderRadius={"0"}
             justifyContent={"center"}
+            pr={"4"}
           >
             <Center h={"full"}>
             <Button background={"#7065ee"}>
