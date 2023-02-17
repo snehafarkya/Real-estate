@@ -1,0 +1,12 @@
+.App{
+background: #f8f7fd;
+}
+
+.defaultCards{
+  background-size: cover;
+  width: 80rem;
+  margin:0 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
