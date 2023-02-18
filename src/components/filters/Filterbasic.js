@@ -11,6 +11,7 @@ import HigherPriceFilter from "./HigherPriceFilter";
 export default function Filterbasic() {
   const [selectdata, setSelectdata] = useState(Cards);
 
+
   const showDataonSelect = (e) => {
 
     if (e.target.value === "gender") {
@@ -67,6 +68,8 @@ export default function Filterbasic() {
             border={"none"}
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
+            textAlign="left"
+
           >
             <label htmlFor="">Location:</label>
             <Text pt={"2"} pr={"4"} fontWeight={"bold"}>
@@ -78,8 +81,9 @@ export default function Filterbasic() {
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
             pr={"4"}
+            textAlign="left"
           >
-            <label htmlFor="">When To: </label>
+            <label htmlFor="" >When To: </label>
             <Input
               placeholder="Select Move-in date"
               size="sm"
@@ -98,6 +102,8 @@ export default function Filterbasic() {
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
             pr={"4"}
+            textAlign="left"
+
           >
             <label htmlFor="">Property Type: </label>
             <Select
@@ -121,6 +127,8 @@ export default function Filterbasic() {
             borderRight={"2px solid #f6f6f6"}
             borderRadius={"0"}
             pr={"4"}
+            textAlign="left"
+
           >
             <label htmlFor="">Price Sort: </label>
             <Select
@@ -153,6 +161,7 @@ export default function Filterbasic() {
                 background={"#7065ee"}
                 color={"white"}
                 _hover={{ color: "black", background: "#e3d8fa" }}
+                onClick={showDataonSelect}
               >
                 Search
               </Button>

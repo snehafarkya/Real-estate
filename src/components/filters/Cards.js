@@ -1,6 +1,8 @@
 import React from 'react'
 import person from './person'
 import { Card,Grid,CardBody, Image, Flex, CardFooter} from '@chakra-ui/react';
+import { MdBathroom , MdOutlineBedroomParent} from 'react-icons/md';
+import {BiBed} from "react-icons/bi"
 export default function Cards() {
   const data = person.map((item) => {
     return (
@@ -20,9 +22,9 @@ export default function Cards() {
             <p>{item.facility.map((fac)=>{
               return <>
               <Grid templateColumns={"auto auto auto"} color="GrayText" fontSize={"0.8em"} justifyContent={"space-between"} >
-              <p style={{margin:"0 12px"}}>{fac.bed}</p>
-              <p style={{margin:"0 12px"}}>{fac.room}</p>
-              <p style={{margin:"0 12px"}}>{fac.bath}</p>
+              <span style={{display:"flex", justifyContent:"center",margin:"0 7px "}}><BiBed style={{margin:"4px 1px",color:"#7065ee"}} /><span style={{}}>  {fac.bed}</span></span>
+              <span style={{display:"flex", justifyContent:"center",margin:"0 7px "}}><MdOutlineBedroomParent style={{margin:"4px 1px",color:"#7065ee"}} /><span style={{}}>  {fac.room}</span></span>
+              <span style={{display:"flex", justifyContent:"center",margin:"0 7px "}}><MdBathroom style={{margin:"4px 1px",color:"#7065ee"}} /><span style={{}}>  {fac.bed}</span></span>
               </Grid>
               </>
             })}</p>

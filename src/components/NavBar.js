@@ -1,5 +1,6 @@
 import React from "react";
 import {Link, Box, Flex, Text,Button,Stack,ButtonGroup,} from "@chakra-ui/react";
+import logo from "../logo.png"
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -85,7 +86,7 @@ const MenuLinks = ({ isOpen }) => {
           fontSize={"1.2em"}
           cursor={"pointer"}
         >
-          RealEstate
+          <img src={logo} alt="" />
         </Text>
         <MenuItem to="/">Rent</MenuItem>
         <MenuItem to="/how"> Buy </MenuItem>
