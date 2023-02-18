@@ -1,18 +1,7 @@
 // we are going to use filter method here with array only
 import React, { useState } from "react";
 import Cards from "./Cards";
-
-import {
-  Button,
-  Flex,
-  Box,
-  Grid,
-  Center,
-  Heading,
-  Input,
-  Select,
-  Text,
-} from "@chakra-ui/react";
+import { Button,Flex,Box,Grid,Center,Heading,Input,Select,Text,} from "@chakra-ui/react";
 import HouseFilter from "./HouseFilter";
 import FlatFilter from "./FlatFilter";
 import LowHouseFilter from "./LowPriceFilter";
@@ -23,25 +12,19 @@ export default function Filterbasic() {
   const [selectdata, setSelectdata] = useState(Cards);
 
   const showDataonSelect = (e) => {
-    // e.preventDefault();
 
     if (e.target.value === "gender") {
-      <HouseFilter />;
       setSelectdata(HouseFilter);
     } else if (e.target.value === "flat") {
-      <FlatFilter />;
       setSelectdata(FlatFilter);
     } else if (e.target.value === "low") {
-      <LowHouseFilter />;
       setSelectdata(LowHouseFilter);
     } else if (e.target.value === "high") {
-      <HighPriceFilter />;
       setSelectdata(HighPriceFilter);
     } else if (e.target.value === "higher") {
-      <HigherPriceFilter />;
       setSelectdata(HigherPriceFilter);
-    } else if (e.target.value == null) {
-      return "No match Found";
+    } else if (e.target.value == "default") {
+      setSelectdata(Cards)
     }
   };
 
@@ -53,7 +36,7 @@ export default function Filterbasic() {
         mx={{ base: "4", md: "28" }}
         my={{ base: "5" }}
       >
-        <Heading as={"h2"} my={{ sm: "5", md: "0" }}>
+        <Heading as={"h2"} my={{ sm: "5", md: "0" }} textAlign={"center"}>
           Search Property to Rent{" "}
         </Heading>
         <Input
@@ -169,7 +152,7 @@ export default function Filterbasic() {
               <Button
                 background={"#7065ee"}
                 color={"white"}
-                _hover={{ color: "black", background: "#ebedf0" }}
+                _hover={{ color: "black", background: "#e3d8fa" }}
               >
                 Search
               </Button>

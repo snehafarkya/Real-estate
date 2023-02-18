@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Link,
-  Box,
-  Flex,
-  Text,
-  Button,
-  Stack,
-  ButtonGroup,
-} from "@chakra-ui/react";
-
-// import { ReactComponent as Logo } from "../logoo.png";
+import {Link, Box, Flex, Text,Button,Stack,ButtonGroup,} from "@chakra-ui/react";
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -18,7 +8,6 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      {/* <Logo />  */}
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -26,10 +15,12 @@ const NavBar = (props) => {
 };
 
 const CloseIcon = () => (
-  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" 
+  style={{margin:"1em"}}
+  >
     <title>Close</title>
     <path
-      fill="white"
+      fill="#7065ee"
       d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
     />
   </svg>
@@ -40,7 +31,8 @@ const MenuIcon = () => (
     width="24px"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
-    fill="white"
+    fill="#7065ee"
+    style={{margin:"1em"}}
   >
     <title>Menu</title>
     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -50,7 +42,7 @@ const MenuIcon = () => (
 const MenuToggle = ({ toggle, isOpen }) => {
   return (
     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <CloseIcon /> : <MenuIcon />}
+      {isOpen ? <CloseIcon  /> : <MenuIcon />}
     </Box>
   );
 };
@@ -91,6 +83,7 @@ const MenuLinks = ({ isOpen }) => {
           left={"50px"}
           fontWeight={"bold"}
           fontSize={"1.2em"}
+          cursor={"pointer"}
         >
           RealEstate
         </Text>
@@ -100,21 +93,22 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/pricing"> Manage Property </MenuItem>
         <MenuItem to="/pricing"> Resources </MenuItem>
 
-        <MenuItem to="/signup" isLast>
+        
           <ButtonGroup>
+          <Button borderColor={"#7065ee"} color={"#7065ee"} variant="outline" 
+            _hover={{background:"#e3d8fa"}}>
+              Login
+            </Button>
             <Button
               color={"white"}
               background={"#7065ee"}
               variant="solid"
-              _hover={{ color: "black", background: "#ebedf0" }}
+              _hover={{ color: "black", background: "#e3d8fa" }}
             >
-              Button
+              Signup
             </Button>
-            <Button borderColor={"#7065ee"} color={"#7065ee"} variant="outline">
-              Button
-            </Button>
+            
           </ButtonGroup>
-        </MenuItem>
       </Stack>
     </Box>
   );
@@ -129,8 +123,8 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       // w="100%"
       mb={8}
-      bg={["primary.500", "primary.500", "transparent", "transparent"]}
-      color={["white", "white", "primary.700", "primary.700"]}
+      bg={["white", "white", "transparent", "transparent"]}
+      color={["white", "black", "primary.700", "primary.700"]}
       {...props}
     >
       {children}

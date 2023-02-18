@@ -34,13 +34,7 @@ export default function HigherPriceFilter() {
   });
   return (
     <div className='defaultCards'>
-  {/* <Grid templateColumns="auto"  order={"last"} background={"cornflowerblue"} w={'full'} p={'auto'} m={"auto"}>
-  <GridItem colSpan={"3"}> */}
-
       {data}
-      {/* </GridItem>
-
-      </Grid> */}
     </div>
   )
 }

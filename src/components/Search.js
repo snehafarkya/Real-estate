@@ -1,18 +1,5 @@
 import React, { Component } from "react";
-import {
-  // Button,
-  Input,
-  // Footer,
-  Card,
-  CardBody,
-  CardHeader,
-  // CardImage,
-  // CardTitle,
-  // CardText
-} from "@chakra-ui/react";
-
-// import blankImg from "./blank.gif";
-
+import { Input,Card,CardBody,CardHeader,} from "@chakra-ui/react";
 
 import countries from "./countries";
 
