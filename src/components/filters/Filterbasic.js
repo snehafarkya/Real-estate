@@ -128,6 +128,7 @@ export default function Filterbasic() {
             borderRadius={"0"}
             pr={"4"}
             textAlign="left"
+            justifyContent={"left"}
 
           >
             <label htmlFor="">Price Sort: </label>

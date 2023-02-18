@@ -77,22 +77,27 @@ const MenuLinks = ({ isOpen }) => {
       >
         <Text
           color={"black"}
-          justifyContent={"flex-start"}
+          justifyContent={{base:'right',md:"flex-start"}}
           align="left"
           position={"absolute"}
-          top={"30px"}
-          left={"50px"}
+          top={{base:"15px" , md:"30px"}}
+          left={{base:'',md:"50px"}}
           fontWeight={"bold"}
           fontSize={"1.2em"}
           cursor={"pointer"}
         >
           <img src={logo} alt="" />
         </Text>
-        <MenuItem to="/">Rent</MenuItem>
-        <MenuItem to="/how"> Buy </MenuItem>
-        <MenuItem to="/faetures"> Sell </MenuItem>
-        <MenuItem to="/pricing"> Manage Property </MenuItem>
-        <MenuItem to="/pricing"> Resources </MenuItem>
+        <MenuItem to="/" padding={"2"}
+        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}>Rent</MenuItem>
+        <MenuItem to="/how" padding={"2"}
+        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Buy </MenuItem>
+        <MenuItem to="/faetures" padding={"2"}
+        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Sell </MenuItem>
+        <MenuItem to="/pricing" padding={"2"}
+        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Manage Property </MenuItem>
+        <MenuItem to="/pricing" padding={"2"}
+        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Resources </MenuItem>
 
         
           <ButtonGroup>
@@ -134,3 +139,4 @@ const NavBarContainer = ({ children, ...props }) => {
 };
 
 export default NavBar;
+
