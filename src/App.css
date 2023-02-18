@@ -16,6 +16,8 @@ background: #f8f7fd;
   .defaultCards{
     grid-template-columns: auto;
     margin: 10px;
+  width: fit-content;
+
   }
   
 }

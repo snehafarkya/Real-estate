@@ -46,14 +46,26 @@ export default function Filterbasic() {
   };
 
   return (
-    <div className="w-6xl m-auto" >
-      <Grid  justifyContent={"space-around"} gridTemplateColumns={{base:"auto",md:"auto auto"}} mx={{base:"4",md:"28"}} my={{base:"5"}}>
-        <Heading as={"h2"} my={{sm:"5",md:"0"}}>Search Property to Rent </Heading>
-          <Input pr="4.5rem" placeholder="Search with Search Bar" background={"white"} w={"sm"} />
+    <div>
+      <Grid
+        justifyContent={"space-around"}
+        gridTemplateColumns={{ base: "auto", md: "auto auto" }}
+        mx={{ base: "4", md: "28" }}
+        my={{ base: "5" }}
+      >
+        <Heading as={"h2"} my={{ sm: "5", md: "0" }}>
+          Search Property to Rent{" "}
+        </Heading>
+        <Input
+          pr="4.5rem"
+          placeholder="Search with Search Bar"
+          background={"white"}
+          w={"sm"}
+        />
       </Grid>
-      <Flex justify={"center"} display={"flex"} gap={"10"} flexWrap={"wrap"}>
+      <Flex justify={"center"}  gap={"10"} flexWrap={"wrap"}>
         <Grid
-          w={"5xl"}
+          w={{base:"fit-content",md:"5xl"}}
           m={"auto"}
           background={"white"}
           margin={"6"}
@@ -62,7 +74,11 @@ export default function Filterbasic() {
           mb={"0"}
           justify={"space-evenly"}
           flexWrap={"wrap"}
-          gridTemplateColumns={{base:"auto auto",md:"auto auto auto auto auto"}}
+          gridTemplateColumns={{
+            base: "auto auto",
+            md: "auto auto auto auto auto",
+          }}
+          justifyContent={"center"}
         >
           <Box
             border={"none"}
@@ -70,7 +86,9 @@ export default function Filterbasic() {
             borderRadius={"0"}
           >
             <label htmlFor="">Location:</label>
-            <Text pt={"2"} pr={"4"} fontWeight={"bold"}>New York</Text>
+            <Text pt={"2"} pr={"4"} fontWeight={"bold"}>
+              New York
+            </Text>
           </Box>
           <Box
             border={"none"}
@@ -89,7 +107,7 @@ export default function Filterbasic() {
               pr={"4"}
               outline={"none"}
               fontWeight={"bold"}
-              _hover={{ border:"none" , outline:"red" }}
+              _hover={{ border: "none", outline: "red" }}
             />
           </Box>
           <Box
@@ -98,8 +116,14 @@ export default function Filterbasic() {
             borderRadius={"0"}
             pr={"4"}
           >
-            <label htmlFor="" >Property Type: </label>
-            <Select onChange={showDataonSelect} id="select" border={"none"} mt={"1"} fontWeight={"bold"} >
+            <label htmlFor="">Property Type: </label>
+            <Select
+              onChange={showDataonSelect}
+              id="select"
+              border={"none"}
+              mt={"1"}
+              fontWeight={"bold"}
+            >
               <option value="default">--Select--</option>
               <option value="gender" id="gender">
                 Houses
@@ -128,10 +152,10 @@ export default function Filterbasic() {
                 {"<$2,000 "}
               </option>
               <option value="high" id="high">
-              {"$2,000 - $ 8,000"}
+                {"$2,000 - $ 8,000"}
               </option>
               <option value="higher" id="higher">
-              {">$8,000 "}
+                {">$8,000 "}
               </option>
             </Select>
           </Box>
@@ -142,24 +166,28 @@ export default function Filterbasic() {
             pr={"4"}
           >
             <Center h={"full"}>
-            <Button background={"#7065ee"} color={"white"}
-        _hover={{color:"black", background:"#ebedf0"}}
-        >
-              Search 
-            </Button></Center>
+              <Button
+                background={"#7065ee"}
+                color={"white"}
+                _hover={{ color: "black", background: "#ebedf0" }}
+              >
+                Search
+              </Button>
+            </Center>
           </Box>
         </Grid>
+        </Flex>
         <Box justifyContent={"center"} mt={"0"} pt={"0"}>
           <Grid
             marginTop={"4"}
-            gridTemplateColumns={{base:"auto",md:"auto auto auto"}}
+            gridTemplateColumns={{ base: "auto", md: "auto auto auto" }}
             placeItems={"center"}
             justifyContent={"center"}
           >
             {selectdata}
           </Grid>
         </Box>
-      </Flex>
+      {/* </Flex> */}
     </div>
   );
 }
