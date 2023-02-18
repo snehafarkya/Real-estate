@@ -46,13 +46,13 @@ export default function Filterbasic() {
   };
 
   return (
-    <div>
-      <Grid templateColumns={"auto auto"} marginX={"28"} justifyContent={"space-around"}>
-        <Heading as={"h2"}>Search Property to Rent </Heading>
+    <div className="w-6xl m-auto" >
+      <Grid  justifyContent={"space-around"} gridTemplateColumns={{base:"auto",md:"auto auto"}} mx={{base:"4",md:"28"}} my={{base:"5"}}>
+        <Heading as={"h2"} my={{sm:"5",md:"0"}}>Search Property to Rent </Heading>
           <Input pr="4.5rem" placeholder="Search with Search Bar" background={"white"} w={"sm"} />
       </Grid>
       <Flex justify={"center"} display={"flex"} gap={"10"} flexWrap={"wrap"}>
-        <Flex
+        <Grid
           w={"5xl"}
           m={"auto"}
           background={"white"}
@@ -61,6 +61,8 @@ export default function Filterbasic() {
           gap={"12"}
           mb={"0"}
           justify={"space-evenly"}
+          flexWrap={"wrap"}
+          gridTemplateColumns={{base:"auto auto",md:"auto auto auto auto auto"}}
         >
           <Box
             border={"none"}
@@ -146,11 +148,11 @@ export default function Filterbasic() {
               Search 
             </Button></Center>
           </Box>
-        </Flex>
+        </Grid>
         <Box justifyContent={"center"} mt={"0"} pt={"0"}>
           <Grid
             marginTop={"4"}
-            templateColumns="repeat(3, 1fr)"
+            gridTemplateColumns={{base:"auto",md:"auto auto auto"}}
             placeItems={"center"}
             justifyContent={"center"}
           >

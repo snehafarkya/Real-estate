@@ -9,4 +9,13 @@ background: #f8f7fd;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media screen and (max-width:600px) {
+  .defaultCards{
+    grid-template-columns: auto;
+    margin: 10px;
+  }
+  
 }
