@@ -1,6 +1,6 @@
 import React from "react";
 import {Link, Box, Flex, Text,Button,Stack,ButtonGroup,} from "@chakra-ui/react";
-import logo from "../logo.png"
+import logo from "./logo.png"
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);

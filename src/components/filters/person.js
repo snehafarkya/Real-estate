@@ -1,4 +1,15 @@
 import houses from './assets/house.jpg'
+import house2 from './assets/house2.jpg'
+import house3 from './assets/house3.jpg'
+import house4 from './assets/house4.jpg'
+import house5 from './assets/house5.jpg'
+import house6 from './assets/house6.jpg'
+import house7 from './assets/house7.jpg'
+import house8 from './assets/house8.png'
+import house9 from './assets/house9.webp'
+import house10 from './assets/house10.webp'
+import house11 from './assets/house11.jpg'
+
 
 const person = [
   {
@@ -16,7 +27,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house2,
     name:"xyz Houses",
     address:'2699 Greenvalley Highland, New York',
     gender:"Houses",
@@ -30,7 +41,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house5,
     name:"xyz Houses",
     address:'2699 Greenvalley Highland, New York',
     gender:"Flats",
@@ -44,7 +55,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house3,
     name:"Flats on rent",
     address:'2699 Greenvalley Highland, New York',
     gender:"Flats",
@@ -58,7 +69,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house7,
     name:"Silly house on sell",
     address:'2699 Greenvalley Highland, New York',
     gender:"Houses",
@@ -72,7 +83,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house4,
     name:"Daisy",
     address:'2699 Greenvalley Highland, New York',
     gender:"Flats",
@@ -100,7 +111,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house8,
     name:"Awesome buildings",
     address:'2699 Greenvalley Highland, New York',
     gender:"Houses",
@@ -114,7 +125,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house6,
     name:"Social Colony",
     address:'2699 Greenvalley Highland, New York',
     gender:"Houses",
@@ -128,7 +139,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house9,
     name:"Flats here",
     address:'2699 Greenvalley Highland, New York',
     gender:"Flats",
@@ -142,7 +153,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house10,
     name:"Stanza Living",
     address:'2699 Greenvalley Highland, New York',
     gender:"Flats",
@@ -156,7 +167,7 @@ const person = [
     ]
   },
   {
-    image:houses,
+    image:house11,
     name:"The Birla Buildings",
     address:'2699 Greenvalley Highland, New York',
     gender:"Flats",
