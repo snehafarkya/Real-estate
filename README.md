@@ -35,6 +35,6 @@ There are still so many corrections and I will make this feature a solid rock to
 
 <a name="🔗links"></a>
 ## 🔗Links 
-The neccesaary links of this project: 
+The neccesaary links of this project: <br>
 <strong>Github: <a href="https://www.github.com/snehafarkya/Real-estate"> Link here</a> <br>
 Vercel deploy <a href="https://real-estate-osme.vercel.app/"> Live site here</a> </strong>
