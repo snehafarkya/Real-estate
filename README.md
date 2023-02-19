@@ -1,5 +1,7 @@
 <center><img src="./logo.png" style="background: transparent padding:4px 8px; border-radius:12px; margin:0px 0px 20px" ></center>
-<img src="./house2.jpg" style="background: transparent padding:4px 8px; border-radius:12px; margin:0px 0px 20px" align="center" >
+<p align="center" >
+<img src="./house2.jpg" style="background: transparent padding:4px 8px; border-radius:12px; margin:0px 0px 20px" >
+</p>
 <blockquote><i> “Owning a home is a keystone of wealth…both financial affluence and emotional security.”</i> </blockquote>
 
 # Table of contents:
