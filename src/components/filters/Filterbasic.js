@@ -24,7 +24,7 @@ export default function Filterbasic() {
       setSelectdata(HighPriceFilter);
     } else if (e.target.value === "higher") {
       setSelectdata(HigherPriceFilter);
-    } else if (e.target.value == "default") {
+    } else if (e.target.value === "default") {
       setSelectdata(Cards)
     }
   };
@@ -40,12 +40,14 @@ export default function Filterbasic() {
         <Heading as={"h2"} my={{ sm: "5", md: "0" }} textAlign={"center"}>
           Search Property to Rent{" "}
         </Heading>
-        <Input
+        <Input focusBorderColor="#7065ee"
           pr="4.5rem"
           placeholder="Search with Search Bar"
           background={"white"}
-          w={"sm"}
+          w={{base:"200",md:"sm"}}
+          mt={{base:"2"}}
         />
+        
       </Grid>
       <Flex justify={"center"}  gap={"10"} flexWrap={"wrap"}>
         <Grid
@@ -84,8 +86,8 @@ export default function Filterbasic() {
             textAlign="left"
           >
             <label htmlFor="" >When To: </label>
-            <Input
-              placeholder="Select Move-in date"
+            <Input focusBorderColor="#7065ee"
+              placeholder="Select "
               size="sm"
               border={"none"}
               type="datetime-local"
@@ -106,7 +108,7 @@ export default function Filterbasic() {
 
           >
             <label htmlFor="">Property Type: </label>
-            <Select
+            <Select focusBorderColor="#7065ee"
               onChange={showDataonSelect}
               id="select"
               border={"none"}
@@ -132,7 +134,7 @@ export default function Filterbasic() {
 
           >
             <label htmlFor="">Price Sort: </label>
-            <Select
+            <Select focusBorderColor="#7065ee"
               onChange={showDataonSelect}
               id="selectPrice"
               border={"none"}
@@ -170,6 +172,7 @@ export default function Filterbasic() {
           </Box>
         </Grid>
         </Flex>
+          
         <Box justifyContent={"center"} mt={"0"} pt={"0"}>
           <Grid
             marginTop={"4"}
@@ -177,7 +180,8 @@ export default function Filterbasic() {
             placeItems={"center"}
             justifyContent={"center"}
           >
-            {selectdata}
+       
+          {selectdata}
           </Grid>
         </Box>
       {/* </Flex> */}

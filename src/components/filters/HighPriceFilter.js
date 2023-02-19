@@ -1,6 +1,9 @@
 import React from 'react'
 import person from './person'
+import { MdBathroom , MdOutlineBedroomParent} from 'react-icons/md';
+import {BiBed} from "react-icons/bi"
 import { Card,Grid,CardBody, Image, Flex, CardFooter} from '@chakra-ui/react';
+
 export default function HighPriceFilter() {
   const data = person.filter((info) =>(info.price > 2000) & (info.price < 8000)).map((item) => {
     return (
@@ -11,7 +14,7 @@ export default function HighPriceFilter() {
 
           <CardBody color="GrayText" fontSize={"0.8em"}>
             <p style={{color:"GrayText"}}><b style={{color:"#7065ee",fontSize:"1.6em"}}>${item.price}</b>/month</p>
-            <p><b style={{color:"black",fontSize:"1.2em"}}>{item.name}</b></p>
+            <p><b style={{color:"black",fontSize:"1.4em"}}>{item.name}</b></p>
             <p>{item.address}</p>
             </CardBody>
 
@@ -19,9 +22,10 @@ export default function HighPriceFilter() {
             <p>{item.facility.map((fac)=>{
               return <>
               <Grid templateColumns={"auto auto auto"} color="GrayText" fontSize={"0.8em"} justifyContent={"space-between"} >
-              <p style={{margin:"0 12px"}}>{fac.bed}</p>
-              <p style={{margin:"0 12px"}}>{fac.room}</p>
-              <p style={{margin:"0 12px"}}>{fac.bath}</p>
+              <span style={{display:"flex", justifyContent:"center",margin:"0 7px "}}><BiBed style={{margin:"4px 1px",color:"#7065ee"}} /><span style={{}}>  {fac.bed}</span></span>
+              <span style={{display:"flex", justifyContent:"center",margin:"0 7px "}}><MdOutlineBedroomParent style={{margin:"4px 1px",color:"#7065ee"}} /><span style={{}}>  {fac.room}</span></span>
+              <span style={{display:"flex", justifyContent:"center",margin:"0 7px "}}><MdBathroom style={{margin:"4px 1px",color:"#7065ee"}} /><span style={{}}>  {fac.bed}</span></span>
+              
               </Grid>
               </>
             })}</p>

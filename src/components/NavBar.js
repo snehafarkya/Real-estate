@@ -8,7 +8,11 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <NavBarContainer {...props}>
+    <NavBarContainer {...props} background="white"  className="nav">
+      <h1 style={{ color: "white", fontWeight: "bold", letterSpacing: "2px" }}>
+      <img src={logo} alt="" />
+
+      </h1>
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -63,40 +67,28 @@ const MenuLinks = ({ isOpen }) => {
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
-      w={"full"}
-      background={"white"}
-      padding={"6"}
+      // w={"full"}
+      // background={"white"}
+      // padding="6"
     >
       <Stack
-        spacing={8}
+        spacing={4}
         align="center"
-        justify={["center", "space-between", "flex-end", "flex-"]}
+        justify={["center", "space-between", "flex-start", "flex-start"]}
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
         color={"black"}
       >
-        <Text
-          color={"black"}
-          justifyContent={{base:'right',md:"flex-start"}}
-          align="left"
-          position={"absolute"}
-          top={{base:"15px" , md:"30px"}}
-          left={{base:'',md:"50px"}}
-          fontWeight={"bold"}
-          fontSize={"1.2em"}
-          cursor={"pointer"}
-        >
-          <img src={logo} alt="" />
-        </Text>
-        <MenuItem to="/" padding={"2"}
+     
+        <MenuItem to="/" padding={"2"} paddingX="4"
         _hover={{background: 'rgba(114, 104, 237, 0.3)'}}>Rent</MenuItem>
-        <MenuItem to="/how" padding={"2"}
+        <MenuItem to="/how" padding={"2"} paddingX="4"
         _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Buy </MenuItem>
-        <MenuItem to="/faetures" padding={"2"}
+        <MenuItem to="/faetures" padding={"2"} paddingX="4"
         _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Sell </MenuItem>
-        <MenuItem to="/pricing" padding={"2"}
+        <MenuItem to="/pricing" padding={"2"} paddingX="4"
         _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Manage Property </MenuItem>
-        <MenuItem to="/pricing" padding={"2"}
+        <MenuItem to="/pricing" padding={"2"} paddingX="4" isLast
         _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Resources </MenuItem>
 
         
@@ -127,9 +119,10 @@ const NavBarContainer = ({ children, ...props }) => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      // w="100%"
+      w="100%"
       mb={8}
-      bg={["white", "white", "transparent", "transparent"]}
+      p={8}
+      bg={["white", "white", "white", "white"]}
       color={["white", "black", "primary.700", "primary.700"]}
       {...props}
     >

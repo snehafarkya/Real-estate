@@ -4,6 +4,7 @@ import { Card,Grid,CardBody, Image, Flex, CardFooter} from '@chakra-ui/react';
 import { MdBathroom , MdOutlineBedroomParent} from 'react-icons/md';
 import {BiBed} from "react-icons/bi"
 export default function Cards() {
+
   const data = person.map((item) => {
     return (
       <>
@@ -13,7 +14,7 @@ export default function Cards() {
 
           <CardBody color="GrayText" fontSize={"0.8em"}>
             <p style={{color:"GrayText"}}><b style={{color:"#7065ee",fontSize:"1.6em"}}>${item.price}</b>/month</p>
-            <p><b style={{color:"black",fontSize:"1.2em"}}>{item.name}</b></p>
+            <p><b style={{color:"black",fontSize:"1.4em"}}>{item.name}</b></p>
             <p>{item.address}</p>
             
             </CardBody>
@@ -36,7 +37,7 @@ export default function Cards() {
   });
   return (
     <div className='defaultCards'>
-      {data}
+      {data }
     </div>
   )
 }

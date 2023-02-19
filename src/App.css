@@ -1,7 +1,9 @@
 .App{
 background: #f8f7fd;
 }
-
+.nav{
+  background:aqua;
+}
 .defaultCards{
   background-size: cover;
   width: 80rem;
