@@ -80,16 +80,16 @@ const MenuLinks = ({ isOpen }) => {
         color={"black"}
       >
      
-        <MenuItem to="/" padding={"2"} paddingX="4"
-        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}>Rent</MenuItem>
+        <MenuItem to="/" padding={"2"} paddingX="4" 
+        _hover={{background: 'rgba(114, 104, 237, 0.3)',borderRadius: "6px"}}>Rent</MenuItem>
         <MenuItem to="/how" padding={"2"} paddingX="4"
-        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Buy </MenuItem>
+        _hover={{background: 'rgba(114, 104, 237, 0.3)',borderRadius: "6px"}}> Buy </MenuItem>
         <MenuItem to="/faetures" padding={"2"} paddingX="4"
-        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Sell </MenuItem>
+        _hover={{background: 'rgba(114, 104, 237, 0.3)',borderRadius: "6px"}}> Sell </MenuItem>
         <MenuItem to="/pricing" padding={"2"} paddingX="4"
-        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Manage Property </MenuItem>
+        _hover={{background: 'rgba(114, 104, 237, 0.3)',borderRadius: "6px"}}> Manage Property </MenuItem>
         <MenuItem to="/pricing" padding={"2"} paddingX="4" isLast
-        _hover={{background: 'rgba(114, 104, 237, 0.3)'}}> Resources </MenuItem>
+        _hover={{background: 'rgba(114, 104, 237, 0.3)',borderRadius: "6px"}}> Resources </MenuItem>
 
         
           <ButtonGroup>

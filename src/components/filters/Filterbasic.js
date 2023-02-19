@@ -175,10 +175,11 @@ export default function Filterbasic() {
           
         <Box justifyContent={"center"} mt={"0"} pt={"0"}>
           <Grid
-            marginTop={"4"}
+            marginY={"4"}
             gridTemplateColumns={{ base: "auto", md: "auto auto auto" }}
             placeItems={"center"}
             justifyContent={"center"}
+            
           >
        
           {selectdata}
