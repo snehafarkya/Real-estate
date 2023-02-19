@@ -13,12 +13,12 @@
 | 4.   |  [Links](#🔗links)     | 
 
 
-## 📑About {about}
+## 📑About {#about}
 This is a single page static website which display the data of houses and flats. It will sort the propertiy by price and type. It also displays the location and asks you the move-in date. 
 
 In the near future, I am looking to update it with a search functionality.
 
-## 👩‍💻Tech Stack{#👩‍💻tech-stack}
+## 👩‍💻Tech Stack {#👩‍💻tech-stack}
 RealEstate is built using the latest technology. To begin with, first, I did Research. Next, I started jotting down the key points and features. The tech stack is as follows:
 
 1. React js for frontend development.
@@ -27,12 +27,12 @@ RealEstate is built using the latest technology. To begin with, first, I did Res
 4. Vercel to deploy the site live.
 5. Github as an opensource to host files.
 
-## 🧿Challanges{#🧿challanges}
+## 🧿Challanges {#🧿challanges}
 To make this feature, I came across many challanges but happy to say that I didn't loose my patience. Working on <code>.filter</code> method and implementing it in every component was one of the task. 
 
 There are still so many corrections and I will make this feature a solid rock to use. 
 
-## 🔗Links{#🔗links}
+## 🔗Links {#🔗links}
 The neccesaary links of this project: 
 <strong>Github: <a href="https://www.github.com/snehafarkya/Real-estate"> Link here</a> <br>
 Vercel deploy <a href="https://real-estate-osme.vercel.app/"> Live site here</a> </strong>
