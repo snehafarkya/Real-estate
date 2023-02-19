@@ -13,7 +13,7 @@
 | 4.   |  [Links](#🔗links)     | 
 
 
-## 📑About{#about}
+## 📑About {#about}
 This is a single page static website which display the data of houses and flats. It will sort the propertiy by price and type. It also displays the location and asks you the move-in date. 
 
 In the near future, I am looking to update it with a search functionality.
