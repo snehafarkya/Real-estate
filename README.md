@@ -27,7 +27,8 @@ RealEstate is built using the latest technology. To begin with, first, I did Res
 4. Vercel to deploy the site live.
 5. Github as an opensource to host files.
 
-## 🧿Challanges {#challenges}
+<a name="challanges"></a>
+## 🧿Challanges 
 To make this feature, I came across many challanges but happy to say that I didn't loose my patience. Working on <code>.filter</code> method and implementing it in every component was one of the task. 
 
 There are still so many corrections and I will make this feature a solid rock to use. 
